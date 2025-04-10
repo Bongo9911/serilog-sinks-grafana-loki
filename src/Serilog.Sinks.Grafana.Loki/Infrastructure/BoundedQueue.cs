@@ -13,7 +13,7 @@ namespace Serilog.Sinks.Grafana.Loki.Infrastructure;
 internal class BoundedQueue<T>
 {
     private const int Unbounded = -1;
-    private const int DefaultQueueLimit = 100_000;
+    private const int DefaultQueueLimit = 1_000_000;
 
     private readonly Queue<T> _queue;
     private readonly int _queueLimit;
